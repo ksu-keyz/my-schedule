@@ -13,10 +13,10 @@
 }
 .navigation{
     display: grid;
-    grid-template-columns: repeat(7, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
     background-color: blueviolet;
     width: 100%;
-    height: 50px;
+    height: auto;
 }
 .nav-element{
     display: block;
@@ -49,6 +49,7 @@ table{
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+    table-layout: fixed;
 }
 th, td{
     border: 1px solid #ddd;
@@ -57,6 +58,10 @@ th, td{
 }
 th{
     background-color: #f2f2f2;
+}
+td{
+    word-wrap: break-word;
+    font-size: 0.95em;
 }
 .free{
     color: #ff8818;
@@ -87,4 +92,35 @@ th{
 }
 .day{
     font-family: cursive;
+    font-size: 1.2em;
+}
+.week-in-one{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    align-items: start;
+}
+.day {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    color: blueviolet;
+}
+/*@media (max-width: 800px){
+    .week-in-one{
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}*/
+.study, .coding, .kickboxing, .violin, .music-theory, .ensemble, .orchestra, .orchestra-or-not, .free{
+    font-weight: bold;
+}
+.week-day{
+    transition-duration: 0.5s;
+    overflow: hidden;
+}
+.week-day:hover {
+    transform: translateY(-5px);
+    border-color: blueviolet;
+    box-shadow: 0 6px 15px rgba(138, 43, 226, 0.2);
 }
