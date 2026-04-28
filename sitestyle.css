@@ -58,3 +58,33 @@ th, td{
 th{
     background-color: #f2f2f2;
 }
+.free{
+    color: #ff8818;
+}
+.ensemble{
+    color: #0b5cff;
+}
+.orchestra{
+    color: #12c983;
+}
+.orchestra-or-not{
+    color: #22b00c;
+}
+.music-theory{
+    color: #ff0bc2;
+}
+.coding{
+    color: #690a83;
+}
+.study{
+    color: #bec11d;
+}
+.kickboxing{
+    color: #c50606;
+}
+.violin{
+    color: #0bbbb8;
+}
+.day{
+    font-family: cursive;
+}
